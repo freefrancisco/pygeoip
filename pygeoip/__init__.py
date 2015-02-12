@@ -546,7 +546,7 @@ class GeoIP(object):
         ipnum = util.ip2long(addr)
         rec = self._get_record(ipnum)
         if not rec:
-            return None
+            return {}
 
         return rec
 
